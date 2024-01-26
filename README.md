@@ -1,6 +1,6 @@
 # aubo_sdk_control
 
-安装前提：cmake版本需要大于3.0.2
+安装前提：需要安装了ros，cmake版本需要大于3.0.2
 
 ---
 一、aubo package 安装
@@ -32,4 +32,7 @@
 ```echo "source /home/***/aubo_ws/devel/setup.bash" >> ~/.bashrc```
 
 ---
-二、aubo sdk 控制
+二、aubo sdk 控制  
+
+1.启动ros master  
+```roscore```
