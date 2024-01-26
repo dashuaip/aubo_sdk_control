@@ -8,10 +8,7 @@
 #include <fstream>
 #include "util.h"
 
-
-#define SERVER_HOST "192.168.40.138"
 #define SERVER_PORT 8899
-
 
 void Example_1::RealTimeWaypointCallback(const aubo_robot_namespace::wayPoint_S *wayPointPtr, void *arg)
 {
@@ -32,7 +29,7 @@ void Example_1::RealTimeEventInfoCallback(const aubo_robot_namespace::RobotEvent
     Util::printEventInfo(*pEventInfo);
 }
 
-void Example_1::demo()
+void Example_1::demo(char SERVER_HOST[])
 {
 
     ServiceInterface robotService;
@@ -93,7 +90,7 @@ void Example_1::demo()
 
 
 
-void Example_1::getJointStatus()
+void Example_1::getJointStatus(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 

@@ -3,6 +3,7 @@
 
 #include "AuboRobotMetaType.h"
 #include "serviceinterface.h"
+#include <ros/ros.h>
 
 class Example_3
 {
@@ -12,7 +13,7 @@ public:
      *
      * Joint motion
      */
-    static void demo();
+    static void demo(char SERVER_HOST[]);
 };
 
 #endif // EXAMPLE_3_H

@@ -7,11 +7,9 @@
 #include <sstream>
 #include <fstream>
 
-
-#define SERVER_HOST "192.168.40.138"
 #define SERVER_PORT 8899
 
-void Example_0::demo()
+void Example_0::demo(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 

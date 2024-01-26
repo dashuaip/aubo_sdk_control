@@ -4,6 +4,8 @@
 #include "AuboRobotMetaType.h"
 #include "serviceinterface.h"
 
+
+
 class Example_4
 {
 public:
@@ -12,9 +14,9 @@ public:
      *
      * Linear motion
      */
-    static void demo();
+    static void demo(char SERVER_HOST[]);
 
-    static void demo_relativeOri();
+    static void demo_relativeOri(char SERVER_HOST[]);
 
     static void RealTimeWaypointCallback(const aubo_robot_namespace::wayPoint_S *wayPointPtr, void *arg);
 

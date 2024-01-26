@@ -8,10 +8,9 @@
 #include <fstream>
 #include "util.h"
 
-#define SERVER_HOST "192.168.40.138"
 #define SERVER_PORT 8899
 
-void Example_3::demo()
+void Example_3::demo(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 
@@ -88,7 +87,7 @@ void Example_3::demo()
         std::cerr<<"Movement to zero posture failure.　ret:"<<ret<<std::endl;
     }
 
-    for(int i=0;i>-1;i++)
+    while (ros::ok())
     {
 //        /** Interface call: set offset**/
 //        aubo_robot_namespace::MoveRelative relativeMoveOnBase;
@@ -121,9 +120,9 @@ void Example_3::demo()
             std::cerr<<"Movement to waypoint 2 failed.　ret:"<<ret<<std::endl;
             break;
         }
+        
+        ros::spinOnce();
     }
-
-    sleep(10);
 
     /** Robotic arm shutdown **/
     robotService.robotServiceRobotShutdown();

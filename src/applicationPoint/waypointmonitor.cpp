@@ -6,7 +6,6 @@
 #include <string.h>
 #include <stdio.h>
 
-#define SERVER_HOST "192.168.40.138"
 #define SERVER_PORT 8899
 
 double WaypointMonitor::S_monitorJointAngle[6] = {0};

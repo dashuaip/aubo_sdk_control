@@ -9,11 +9,9 @@
 #include <fstream>
 #include "util.h"
 
-#define SERVER_HOST "192.168.40.138"
 #define SERVER_PORT 8899
 
-
-void Example_6::demo()
+void Example_6::demo(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 
@@ -181,7 +179,7 @@ void Example_6::demo()
 
 
 
-void Example_6::example_MoveLtoPosition()
+void Example_6::example_MoveLtoPosition(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 
@@ -319,7 +317,7 @@ void Example_6::example_MoveLtoPosition()
     robotService.robotServiceLogout();
 }
 
-void Example_6::example_MoveJtoPosition()
+void Example_6::example_MoveJtoPosition(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 

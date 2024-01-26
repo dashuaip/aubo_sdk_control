@@ -9,13 +9,9 @@
 #include <fstream>
 #include "util.h"
 
-
-
-#define SERVER_HOST "192.168.40.138"
 #define SERVER_PORT 8899
 
-
-void Example_5::demo()
+void Example_5::demo(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 
@@ -215,7 +211,7 @@ void Example_5::demo()
 
 
 
-void Example_5::demo1()
+void Example_5::demo1(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 

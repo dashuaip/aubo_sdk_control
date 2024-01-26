@@ -4,6 +4,8 @@
 #include "AuboRobotMetaType.h"
 #include "serviceinterface.h"
 
+
+
 class Example_0
 {
 public:
@@ -12,7 +14,7 @@ public:
      *
      * Use the SDK to build a control engineering for the simplest robotic arm
      */
-    static void demo();
+    static void demo(char SERVER_HOST[]);
 };
 
 #endif // EXAMPLE_0_H

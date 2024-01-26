@@ -4,6 +4,8 @@
 #include "AuboRobotMetaType.h"
 #include "serviceinterface.h"
 
+
+
 class Example_5
 {
 public:
@@ -13,9 +15,9 @@ public:
      * Trajectory movement
      *
      */
-    static void demo();
+    static void demo(char SERVER_HOST[]);
 
-    static void demo1();
+    static void demo1(char SERVER_HOST[]);
 };
 
 #endif // EXAMPLE_5_H

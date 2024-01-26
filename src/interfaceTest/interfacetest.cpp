@@ -8,7 +8,7 @@
 #include <fstream>
 
 
-#define SERVER_HOST "192.168.40.138"
+
 #define SERVER_PORT 8899
 
 

@@ -47,17 +47,17 @@ private:
 
 public:
     /** 关于一些信息获取的示例　**/
-    void example_0();
+    void example_0(char SERVER_HOST[]);
 
     void example_JointMove();
 
-    void example_LineMove();
+    void example_LineMove(char SERVER_HOST[]);
 
-    void example_TrackMove();
+    void example_TrackMove(char SERVER_HOST[]);
 
-    void example_MoveLtoPosition();
+    void example_MoveLtoPosition(char SERVER_HOST[]);
 
-    void example_MoveJtoPosition();
+    void example_MoveJtoPosition(char SERVER_HOST[]);
 
 public:
     /** 四元素和欧拉角相互转化示例 **/
@@ -65,18 +65,18 @@ public:
 
 
 public:  //关于工具端的实例函数
-    void example_ToolIO();
+    void example_ToolIO(char SERVER_HOST[]);
 
 public:
 
-    void testOfflineTrack();        //测试离线轨迹
+    void testOfflineTrack(char SERVER_HOST[]);        //测试离线轨迹
 
-    void testWorkMode();            //机械臂仿真模式,真实模式
+    void testWorkMode(char SERVER_HOST[]);            //机械臂仿真模式,真实模式
 
-    void testArriveAhead();         //跟随模式测试
+    void testArriveAhead(char SERVER_HOST[]);         //跟随模式测试
     //类似于交融半径，几个点之间运动到某一个为至点后不停留
 
-    void testIo();                  //IO状态测试（需要连接实际的机器人）
+    void testIo(char SERVER_HOST[]);                  //IO状态测试（需要连接实际的机器人）
 
 
 
@@ -89,7 +89,7 @@ public:
      * 使用SDK构建一个最简单的机械臂的控制工程
      *
      */
-    void  Example_0();
+    void  Example_0(char SERVER_HOST[]);
 
 
 
@@ -106,7 +106,7 @@ public:
      *
      *
      */
-    void  Example_1();
+    void  Example_1(char SERVER_HOST[]);
 
 
     /**
@@ -114,14 +114,14 @@ public:
      *
      * 关节运动
      */
-    void  Example_3();
+    void  Example_3(char SERVER_HOST[]);
 
     /**
      * @brief Example_4
      *
      * 直线运动
      */
-    void  Example_4();
+    void  Example_4(char SERVER_HOST[]);
 
     /**
      * @brief Example_5

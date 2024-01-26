@@ -8,7 +8,7 @@
 #include <fstream>
 
 
-#define SERVER_HOST "192.168.40.138"
+
 #define SERVER_PORT 8899
 
 
@@ -169,7 +169,7 @@ void AuboSdkExample::initJointAngleArray(double *array, double joint0, double jo
  *
  */
 
-void AuboSdkExample::example_0()
+void AuboSdkExample::example_0(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 
@@ -274,7 +274,7 @@ void AuboSdkExample::example_JointMove()
  *
 */
 
-void AuboSdkExample::example_LineMove()
+void AuboSdkExample::example_LineMove(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 
@@ -422,7 +422,7 @@ void AuboSdkExample::example_LineMove()
  *
  *
  */
-void AuboSdkExample::example_TrackMove()
+void AuboSdkExample::example_TrackMove(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 
@@ -610,7 +610,7 @@ void AuboSdkExample::example_TrackMove()
  *
  */
 
-void AuboSdkExample::example_MoveLtoPosition()
+void AuboSdkExample::example_MoveLtoPosition(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 
@@ -741,7 +741,7 @@ void AuboSdkExample::example_MoveLtoPosition()
  *setp6:设置位置参数（循环）
  *setp7:保持当前运动姿态以关节运动方式运动到目标位置（循环）
  */
-void AuboSdkExample::example_MoveJtoPosition()
+void AuboSdkExample::example_MoveJtoPosition(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 
@@ -867,7 +867,7 @@ void AuboSdkExample::example_quaternion_RPY_Conversion()
 
 
 
-void AuboSdkExample::example_ToolIO()
+void AuboSdkExample::example_ToolIO(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 
@@ -971,7 +971,7 @@ void AuboSdkExample::example_ToolIO()
  *
  *注意：离线轨迹文件需要添加
  */
-void AuboSdkExample::testOfflineTrack()
+void AuboSdkExample::testOfflineTrack(char SERVER_HOST[])
 {
 
     ServiceInterface robotService;
@@ -1033,7 +1033,7 @@ void AuboSdkExample::testOfflineTrack()
  */
 
 
-void AuboSdkExample::testWorkMode()
+void AuboSdkExample::testWorkMode(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 
@@ -1085,7 +1085,7 @@ void AuboSdkExample::testWorkMode()
   *
   *
   */
-void AuboSdkExample::testArriveAhead()
+void AuboSdkExample::testArriveAhead(char SERVER_HOST[])
 {
 
     ServiceInterface robotService;
@@ -1212,7 +1212,7 @@ void AuboSdkExample::testArriveAhead()
  *
  */
 
-void AuboSdkExample::testIo()
+void AuboSdkExample::testIo(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 
@@ -1255,7 +1255,7 @@ void AuboSdkExample::testIo()
  * 第五步：Logout　　　断开网络连接
  *
  */
-void AuboSdkExample::Example_0()
+void AuboSdkExample::Example_0(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 
@@ -1307,7 +1307,7 @@ void AuboSdkExample::Example_0()
 
 
 
-void AuboSdkExample::Example_1()
+void AuboSdkExample::Example_1(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 
@@ -1367,7 +1367,7 @@ void AuboSdkExample::Example_1()
 
 
 
-void AuboSdkExample::Example_3()
+void AuboSdkExample::Example_3(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 
@@ -1493,7 +1493,7 @@ void AuboSdkExample::Example_3()
     robotService.robotServiceLogout();
 }
 
-void AuboSdkExample::Example_4()
+void AuboSdkExample::Example_4(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 

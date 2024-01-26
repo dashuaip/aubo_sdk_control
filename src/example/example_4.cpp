@@ -9,8 +9,6 @@
 
 #include "util.h"
 
-
-#define SERVER_HOST "192.168.40.138"
 #define SERVER_PORT 8899
 
 aubo_robot_namespace::wayPoint_S Example_4::s_currentWayPoing;
@@ -24,7 +22,7 @@ void Example_4::RealTimeWaypointCallback(const aubo_robot_namespace::wayPoint_S 
 }
 
 
-void Example_4::demo()
+void Example_4::demo(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 
@@ -158,7 +156,7 @@ void Example_4::demo()
 
 
 
-void Example_4::demo_relativeOri()
+void Example_4::demo_relativeOri(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 

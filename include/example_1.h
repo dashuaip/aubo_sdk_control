@@ -4,12 +4,7 @@
 #include "AuboRobotMetaType.h"
 #include "serviceinterface.h"
 
-/**
- * @brief The Example_1 class
- *
- * About the acquisition of the relevant state of the robot arm
- *
- */
+
 
 class Example_1
 {
@@ -25,10 +20,10 @@ public:
      *
      * 回调函数的方式获取实时路点，末端速度，机械臂的事件
      */
-    static void demo();
+    static void demo(char SERVER_HOST[]);
 
 
-    static void getJointStatus();
+    static void getJointStatus(char SERVER_HOST[]);
 };
 
 #endif // EXAMPLE_1_H

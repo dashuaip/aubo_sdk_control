@@ -1,13 +1,8 @@
 #ifndef EXAMPLE_9_H
 #define EXAMPLE_9_H
 
-/**
- * @brief The Example_9 class
- *
- *
- * About the use case of io
- *
- */
+
+
 class Example_9
 {
 public:
@@ -16,7 +11,7 @@ public:
      *
      * IO Control
      */
-    static void demo();
+    static void demo(char SERVER_HOST[]);
 };
 
 #endif // EXAMPLE_9_H

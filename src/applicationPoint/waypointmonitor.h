@@ -6,6 +6,8 @@
 
 #include <sstream>
 
+
+
 class WaypointMonitor
 {
 public:

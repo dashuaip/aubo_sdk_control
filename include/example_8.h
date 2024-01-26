@@ -1,6 +1,8 @@
 #ifndef EXAMPLE_8_H
 #define EXAMPLE_8_H
 
+
+
 class Example_8
 {
 public:
@@ -9,7 +11,7 @@ public:
      *
      * Positive and negative solution interface
      */
-    static void demo();
+    static void demo(char SERVER_HOST[]);
 
     static void FK();
 

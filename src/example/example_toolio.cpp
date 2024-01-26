@@ -7,12 +7,9 @@
 #include "AuboRobotMetaType.h"    //Robot arm metadata type
 #include "serviceinterface.h"     //Robot arm interface
 
-#define SERVER_HOST "192.168.40.138"
 #define SERVER_PORT 8899
 
-
-
-void Example_ToolIO::demo()
+void Example_ToolIO::demo(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 

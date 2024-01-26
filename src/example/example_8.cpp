@@ -9,12 +9,9 @@
 #include <fstream>
 #include "util.h"
 
-#define SERVER_HOST "192.168.40.138"
 #define SERVER_PORT 8899
 
-
-
-void Example_8::demo()
+void Example_8::demo(char SERVER_HOST[])
 {
     FK();
     IK();
