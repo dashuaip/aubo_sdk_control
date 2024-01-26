@@ -8,7 +8,7 @@
 1.创建文件夹  
 ```mkdir -p ~/aubo_ws/src```
 
-2.进入src目录   
+2.进入 src 目录   
 ```cd ~/aubo_ws/src/```
 
 3.下载 ros package  
@@ -38,8 +38,8 @@
 ```roscore```  
 
 2.控制机械臂  
-1)第一种方法，在 _robot_ip:= 后面输入自己机械臂的IP地址，直接启动  
+1)第一种方法，在 _robot_ip:= 后面输入自己机械臂的 IP 地址，直接启动  
 ```rosrun aubo_sdk_control aubo_sdk_control_main _robot_ip:=***.***.***.***```  
 
-2)第二种方法，把 aubo_sdk_control_main.cpp 里的第16行 127.0.0.1 修改成自己机械臂的IP地址并重新编译后  
+2)第二种方法，把 aubo_sdk_control_main.cpp 里的第 16 行的 127.0.0.1 修改成自己机械臂的 IP 地址并重新编译后  
 ```rosrun aubo_sdk_control aubo_sdk_control_main```  
