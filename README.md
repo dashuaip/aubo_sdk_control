@@ -37,5 +37,5 @@
 1.启动 ros master  
 ```roscore```  
 
-2.控制机械臂
+2.控制机械臂  
 ```rosrun aubo_sdk_control main```
