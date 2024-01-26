@@ -38,4 +38,4 @@
 ```roscore```  
 
 2.控制机械臂  
-```rosrun aubo_sdk_control aubo_sdk_control_main```
+```rosrun aubo_sdk_control aubo_sdk_control_main _robot_ip:=***.***.***.***```
