@@ -13,7 +13,7 @@
 #include "example_9.h"
 
 std::string robot_ip;
-char SERVER_HOST[16] = "192.168.40.128";
+char SERVER_HOST[16] = "127.0.0.1";
 
 int main(int argc, char **argv) {
 
