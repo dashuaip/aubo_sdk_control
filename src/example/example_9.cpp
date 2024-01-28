@@ -59,8 +59,12 @@ void Example_9::demo(char SERVER_HOST[])
     ret = robotService.robotServiceSetBoardIOStatus(aubo_robot_namespace::RobotBoardUserDO, "U_DO_02", 0);
     std::cerr<<"ret:"<<ret<<std::endl;
 
+    /** Robotic arm shutdown **/
+    robotService.robotServiceRobotShutdown();
+
     /** Interface call: logout　**/
     robotService.robotServiceLogout();
+    
 }
 
 

@@ -258,7 +258,7 @@ void Example_5::demo1(char SERVER_HOST[])
     }
 
 
-    for(int i=0;i>-1;)
+    for(int i=0;i<5;i++)
     {
         //Linear motion
         robotService.robotServiceInitGlobalMoveProfile();
@@ -413,4 +413,11 @@ void Example_5::demo1(char SERVER_HOST[])
         }
 
     }
+
+        /** Robotic arm shutdown**/
+    robotService.robotServiceRobotShutdown();
+
+    /** Interface call: logout　**/
+    robotService.robotServiceLogout();
+    
 }

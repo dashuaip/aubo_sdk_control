@@ -140,7 +140,7 @@ void Example_6::demo(char SERVER_HOST[])
     toolDesc_1.toolInEndOrientation.y=0;
     toolDesc_1.toolInEndOrientation.z=0;
 
-    for(int i=0;i<10;i++)
+    for(int i=0;i<5;i++)
     {
         position.x = 0.0;
         position.y = 0.0;

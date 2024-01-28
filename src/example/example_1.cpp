@@ -78,7 +78,7 @@ void Example_1::demo(char SERVER_HOST[])
     robotService.robotServiceRegisterRobotEventInfoCallback(Example_1::RealTimeEventInfoCallback, NULL);
 
 
-    sleep(100);
+    sleep(5);
 
 
     /** Robotic arm shutdown **/
@@ -145,5 +145,11 @@ void Example_1::getJointStatus(char SERVER_HOST[])
         std::cerr<<"Failed to get joint state."<<std::endl;
     }
 
-    sleep(10000);
+    sleep(5);
+
+    /** Robotic arm shutdown **/
+    robotService.robotServiceRobotShutdown();
+
+    /** Interface call: logout　**/
+    robotService.robotServiceLogout();
 }

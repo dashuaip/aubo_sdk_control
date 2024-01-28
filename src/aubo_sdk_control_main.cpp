@@ -13,7 +13,7 @@
 #include "example_9.h"
 
 std::string robot_ip;
-char SERVER_HOST[16] = "127.0.0.1";
+char SERVER_HOST[16] = "192.168.40.128";
 
 int main(int argc, char **argv) {
 
@@ -53,7 +53,7 @@ int main(int argc, char **argv) {
     // Example_6::demo(SERVER_HOST);
 
     // //Case 8: Positive and negative solutions
-    // Example_8::demo(SERVER_HOST);
+    // Example_8::demo();
 
     // //Case 9: About the use case of io
     // Example_9::demo(SERVER_HOST);

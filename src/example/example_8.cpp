@@ -11,7 +11,7 @@
 
 #define SERVER_PORT 8899
 
-void Example_8::demo(char SERVER_HOST[])
+void Example_8::demo()
 {
     FK();
     IK();

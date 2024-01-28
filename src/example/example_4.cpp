@@ -114,7 +114,7 @@ void Example_4::demo(char SERVER_HOST[])
     robotService.robotServiceSetGlobalMoveEndMaxLineVelc(lineMoveMaxVelc);
     robotService.robotServiceGetGlobalMoveEndMaxAngleVelc(lineMoveMaxVelc);
 
-    for(int i=0;i<20;i++)
+    for(int i=0;i<5;i++)
     {
         double jointAngle[aubo_robot_namespace::ARM_DOF] = {0};
         Util::initJointAngleArray(jointAngle, 0.0/180.0*M_PI,  0.0/180.0*M_PI,  90.0/180.0*M_PI, 0.0/180.0*M_PI, 90.0/180.0*M_PI, 0.0/180.0*M_PI);
