@@ -30,7 +30,6 @@ int main(int argc, char **argv) {
         SERVER_HOST[robot_ip.size()] = '\0';
     }
 
-
     // //Case 0: Using the SDK to build a control engineering for the simplest robotic arm
     // Example_0::demo(SERVER_HOST);
 
@@ -60,5 +59,6 @@ int main(int argc, char **argv) {
 
     ros::shutdown();
     return 0;
+    
 }
 
