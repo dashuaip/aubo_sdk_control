@@ -61,4 +61,11 @@ void Example_ToolIO::demo(char SERVER_HOST[])
     {
         std::cerr<<"Set the tool end IO type Failed."<<std::endl;
     }
+
+    /** Robotic arm shutdown **/
+    robotService.robotServiceRobotShutdown();
+
+    /** Interface call: logout　**/
+    robotService.robotServiceLogout();
+    
 }
