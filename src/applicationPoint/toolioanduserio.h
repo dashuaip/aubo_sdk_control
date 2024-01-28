@@ -23,7 +23,7 @@ public:
      *
      *    2.  用户IO接继电器　 常开触点接SI06和0V　　控制SI06与0V的通断
      */
-    static void run();
+    static void run(char SERVER_HOST[]);
 
 };
 

@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdio.h>
+#include <cmath>
 
 #define SERVER_PORT 8899
 
@@ -40,7 +41,7 @@ void WaypointMonitor::RealTimeWaypointCallback(const aubo_robot_namespace::wayPo
     }
 }
 
-void WaypointMonitor::startup()
+void WaypointMonitor::startup(char SERVER_HOST[])
 {
     ServiceInterface robotService;
 

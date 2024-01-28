@@ -12,7 +12,7 @@ ToolioAndUserIO::ToolioAndUserIO()
 {
 }
 
-void ToolioAndUserIO::run()
+void ToolioAndUserIO::run(char SERVER_HOST[])
 {
     ServiceInterface *robotServicePtr = new ServiceInterface();
 

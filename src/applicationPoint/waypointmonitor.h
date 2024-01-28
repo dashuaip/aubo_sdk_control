@@ -16,7 +16,7 @@ public:
 public:
     static void RealTimeWaypointCallback (const aubo_robot_namespace::wayPoint_S *wayPointPtr, void *arg); //用于获取实时路点回调函数
 
-    static void startup();
+    static void startup(char SERVER_HOST[]);
 
 private:
 
