@@ -18,11 +18,10 @@ char SERVER_HOST[16] = "127.0.0.1";
 int main(int argc, char **argv) {
 
     ros::init(argc, argv, "aubo_sdk_control");
-    ros::NodeHandle nh;
-    ros::NodeHandle private_nh("~");  // 添加一个用于访问私有参数的句柄
+    ros::NodeHandle nh("~");  // 添加一个用于访问私有参数的句柄
 
     // 从命令行参数获取服务器主机地址
-    if (!private_nh.getParam("robot_ip", robot_ip)) {
+    if (!nh.getParam("robot_ip", robot_ip)) {
         ROS_ERROR("Couldn't get parameter: robot_ip");
     }
     else{
