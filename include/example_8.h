@@ -11,7 +11,7 @@ public:
      *
      * Positive and negative solution interface
      */
-    static void demo(char SERVER_HOST[]);
+    static void demo();
 
     static void FK();
 
